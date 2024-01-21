@@ -41,7 +41,7 @@ return {
       lspconfig.htmx.setup({ capabilities = capabilities, filetypes = { "html", "templ" } })
       lspconfig.tailwindcss.setup({
         capabilities = capabilities,
-        filetypes = { "templ", "html", "javascript", "typescript", "react" },
+        filetypes = { "templ", "html", "javascript", "javascriptreact", "javascript.jsx" ,"typescript", "typescriptreact", "typescript.tsx" },
         init_options = { userLanguages = { templ = "html" } },
       })
     end,
