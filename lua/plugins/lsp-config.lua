@@ -7,7 +7,7 @@ local lsps = {
   "templ",
   "html",
   "htmx",
-  "tailwindcss"
+  "tailwindcss",
 }
 
 return {
@@ -39,7 +39,11 @@ return {
       lspconfig.templ.setup({ capabilities = capabilities })
       lspconfig.html.setup({ capabilities = capabilities, filetypes = { "html", "templ" } })
       lspconfig.htmx.setup({ capabilities = capabilities, filetypes = { "html", "templ" } })
-      lspconfig.tailwindcss.setup({ capabilities = capabilities, filetypes = { "html", "templ" } })
+      lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+        filetypes = { "templ", "html", "javascript", "typescript", "react" },
+        init_options = { userLanguages = { templ = "html" } },
+      })
     end,
   },
 }
