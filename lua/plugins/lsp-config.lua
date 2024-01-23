@@ -8,6 +8,7 @@ local lsps = {
   "html",
   "htmx",
   "tailwindcss",
+  "cssls"
 }
 
 return {
@@ -37,6 +38,7 @@ return {
       lspconfig.tsserver.setup({ capabilities = capabilities })
       lspconfig.pyright.setup({ capabilities = capabilities })
       lspconfig.templ.setup({ capabilities = capabilities })
+      lspconfig.cssls.setup({ capabilities = capabilities })
       lspconfig.html.setup({ capabilities = capabilities, filetypes = { "html", "templ" } })
       lspconfig.htmx.setup({ capabilities = capabilities, filetypes = { "html", "templ" } })
       lspconfig.tailwindcss.setup({
