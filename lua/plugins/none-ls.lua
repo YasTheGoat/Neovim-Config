@@ -12,7 +12,6 @@ return {
 					null_ls.builtins.formatting.gersemi,
 					null_ls.builtins.formatting.clang_format,
 					null_ls.builtins.formatting.gofumpt,
-					null_ls.builtins.diagnostics.eslint_d,
 					null_ls.builtins.diagnostics.checkmake,
 				},
 			})
