@@ -21,6 +21,7 @@ return {
 					"tailwindcss",
 					"cmake",
 					"prismals",
+          "rust_analyzer"
 				},
 			})
 		end,
@@ -33,6 +34,7 @@ return {
 
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.clangd.setup({ capabilities = capabilities })
+			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
 			lspconfig.tsserver.setup({ capabilities = capabilities })
 			lspconfig.pyright.setup({ capabilities = capabilities })
