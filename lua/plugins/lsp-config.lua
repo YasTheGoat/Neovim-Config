@@ -19,9 +19,9 @@ return {
 					"html",
 					"htmx",
 					"tailwindcss",
-					"cmake",
 					"prismals",
-          "rust_analyzer"
+          "rust_analyzer",
+          "zig"
 				},
 			})
 		end,
@@ -33,7 +33,8 @@ return {
 			local lspconfig = require("lspconfig")
 
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
-			lspconfig.clangd.setup({ capabilities = capabilities })
+      lspconfig.clangd.setup({ capabilities = capabilities })
+			lspconfig.zig.setup({ capabilities = capabilities })
 			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
 			lspconfig.tsserver.setup({ capabilities = capabilities })
