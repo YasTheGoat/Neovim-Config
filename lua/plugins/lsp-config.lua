@@ -21,7 +21,7 @@ return {
 					"tailwindcss",
 					"prismals",
           "rust_analyzer",
-          "zig"
+          "zls"
 				},
 			})
 		end,
@@ -34,7 +34,7 @@ return {
 
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
       lspconfig.clangd.setup({ capabilities = capabilities })
-			lspconfig.zig.setup({ capabilities = capabilities })
+			lspconfig.zls.setup({ capabilities = capabilities })
 			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
 			lspconfig.tsserver.setup({ capabilities = capabilities })
