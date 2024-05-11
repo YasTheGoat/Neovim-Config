@@ -68,7 +68,7 @@ return {
 				},
 			},
 			transparent_background = false,
-			show_end_of_buffer = false,
+			show_end_of_buffer = true,
 			integration_default = false,
 			integrations = {
 				barbecue = { dim_dirname = true, bold_basename = true, dim_context = false, alt_background = false },
