@@ -20,8 +20,8 @@ return {
 					"htmx",
 					"tailwindcss",
 					"prismals",
-          "rust_analyzer",
-          "zls"
+					"rust_analyzer",
+					"zls"
 				},
 			})
 		end,
@@ -33,7 +33,7 @@ return {
 			local lspconfig = require("lspconfig")
 
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
-      lspconfig.clangd.setup({ capabilities = capabilities })
+			lspconfig.clangd.setup({ capabilities = capabilities })
 			lspconfig.zls.setup({ capabilities = capabilities })
 			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })

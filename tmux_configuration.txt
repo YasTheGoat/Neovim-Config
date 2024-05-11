@@ -1,0 +1,42 @@
+unbind r
+
+bind r source-file ~/.tmux.conf
+
+set-option -ga terminal-overrides ",xterm-256color:Tc"
+
+set -g prefix C-s
+
+set -g mouse on
+
+bind-key h select-pane -L
+bind-key j select-pane -D
+bind-key k select-pane -U
+bind-key l select-pane -R
+
+set-option -g status-position top
+
+# STATUS LINE
+set -g status on
+set -g status-interval 1
+set -g status-justify left
+# Careful! It is spelled "centre" not "center"
+
+set -g status-style fg=#ebdbb2,bg=#1d2021
+# Highlight the current window.
+
+setw -g window-status-current-style fg=#7daea3,bright
+
+# LEFT STATUS
+set -g status-left-length 100
+set -g status-left-style default
+set -g status-left " "
+
+# RIGHT STATUS
+set -g status-right-length 100
+set -g status-right-style fg=#e78a4e
+set -g status-right "#{pane_current_path} "
+
+
+# COMMAND MODE 
+set-option -g message-style fg=#ebdbb2,bg=#595959
+

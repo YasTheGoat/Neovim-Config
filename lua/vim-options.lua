@@ -28,6 +28,5 @@ vim.keymap.set("n", "<leader>P", '"+P', default_opts)
 vim.filetype.add({ extension = { templ = "templ" } })
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
-        virtual_text = false
     }
 )
