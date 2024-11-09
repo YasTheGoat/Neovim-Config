@@ -13,14 +13,13 @@ return {
 					"lua_ls",
 					"clangd",
 					"gopls",
-					"tsserver",
 					"pyright",
 					"templ",
 					"html",
 					"htmx",
 					"tailwindcss",
-					"prismals",
 					"rust_analyzer",
+					"ts_ls",
 					"zls"
 				},
 			})
@@ -37,7 +36,7 @@ return {
 			lspconfig.zls.setup({ capabilities = capabilities })
 			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
-			lspconfig.tsserver.setup({ capabilities = capabilities })
+			lspconfig.ts_ls.setup({ capabilities = capabilities })
 			lspconfig.pyright.setup({ capabilities = capabilities })
 			lspconfig.templ.setup({ capabilities = capabilities })
 			lspconfig.cssls.setup({ capabilities = capabilities })
@@ -57,7 +56,6 @@ return {
 				},
 				init_options = { userLanguages = { templ = "html" } },
 			})
-			lspconfig.prismals.setup({ capabilities = capabilities })
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("UserLspConfig", {}),
