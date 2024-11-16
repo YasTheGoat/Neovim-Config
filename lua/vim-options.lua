@@ -13,6 +13,8 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
 vim.g.mapleader = " "
+vim.opt.swapfile = false
+
 
 local default_opts = { noremap = true, silent = true }
 vim.keymap.set("v", "<leader>y", '"+y', default_opts)
