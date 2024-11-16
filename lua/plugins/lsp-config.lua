@@ -19,7 +19,7 @@ return {
           "ts_ls",
           "zls",
         },
-      })
+    })
     end,
   },
   {
