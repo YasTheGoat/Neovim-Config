@@ -10,11 +10,12 @@ return {
       --   If not available, we use `mini` as the fallback
       "rcarriga/nvim-notify",
     },
-    config = function ()
-      require("noice").setup( {
-        background_color = "#000000"
+    config = function()
+      require("noice").setup()
+      require("notify").setup({
+        background_colour = "#000000",
+        stages = "static"
       })
-
-    end
+    end,
   },
 }

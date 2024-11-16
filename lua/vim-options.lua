@@ -66,4 +66,7 @@ vim.keymap.set("n", "<C-h>", function()
 	harpoon:list():next()
 end)
 
+-- LAZYGIT
+vim.keymap.set("n", "<leader>lg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {})
