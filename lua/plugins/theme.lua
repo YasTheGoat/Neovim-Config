@@ -46,7 +46,7 @@ return {
 						CursorLineNr = { fg = colors.text },
 						FloatBorder = { bg = "NONE", fg = colors.subtext2},
 						GitSignsChange = { fg = colors.peach },
-						LineNr = { fg = colors.overlay0 },
+						LineNr = { fg = colors.overlay0},
 						LspInfoBorder = { link = "FloatBorder" },
 						NeoTreeDirectoryIcon = { fg = colors.subtext1 },
 						NeoTreeDirectoryName = { fg = colors.subtext1 },

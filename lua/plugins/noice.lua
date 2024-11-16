@@ -11,7 +11,9 @@ return {
       "rcarriga/nvim-notify",
     },
     config = function ()
-      require("noice").setup()
+      require("noice").setup( {
+        background_color = "#000000"
+      })
 
     end
   },

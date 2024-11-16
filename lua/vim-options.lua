@@ -1,4 +1,4 @@
-vim.cmd("hi CursorLineNr guifg=#af00af")
+vim.cmd("hi CursorLineNr guifg=#fff")
 vim.cmd("set cursorline")
 vim.cmd("set cursorlineopt=number")
 
