@@ -18,6 +18,7 @@ return {
 					"rust_analyzer",
 					"ts_ls",
 					"zls",
+					"astro",
 				},
 			})
 		end,
@@ -36,6 +37,7 @@ return {
 			lspconfig.ts_ls.setup({ capabilities = capabilities })
 			lspconfig.pyright.setup({ capabilities = capabilities })
 			lspconfig.html.setup({ capabilities = capabilities })
+			lspconfig.astro.setup({ capabilities = capabilities })
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("UserLspConfig", {}),
