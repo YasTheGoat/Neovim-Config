@@ -1,6 +1,12 @@
-# Neovim Configuration
+# NeoConf
 
-This is my personal Neovim setup. It’s designed to be fast, functional, and easy to use. If you’re into coding, navigating files, or just want a clean and efficient setup, this might be useful for you.
+This is my personal Neovim configuration. It’s designed to be fast, functional, and easy to use. If you’re into coding, navigating files, or just want a clean and efficient setup, this might be useful for you.
+
+---
+
+## Showcase
+
+![Screenshot 2024-11-19 193826](https://github.com/user-attachments/assets/f3dc232b-4e7a-4e80-b04f-987c0d219946) ![Screenshot 2024-11-19 193642](https://github.com/user-attachments/assets/971099e3-2003-4ba3-bae0-031811590ac5)
 
 ---
 
@@ -57,7 +63,7 @@ Here’s the full list of plugins included in this setup:
 
 1. Clone this repository into your neovim configuration folder:
    ```bash
-   git clone https://github.com/yasthegoat/neovim-config
+   git clone https://github.com/yasthegoat/neoconf
    ```
 2. Install [Neovim](https://neovim.io/)
 3. Lazy will take care of the plugins installation
