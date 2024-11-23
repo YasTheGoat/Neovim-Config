@@ -74,4 +74,10 @@ end)
 -- LAZYGIT
 vim.keymap.set("n", "<leader>lg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
 
+
+-- DAP
+local dap = require("dap")
+vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, {})
+vim.keymap.set("n", "<leader>dc", dap.continue, {})
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {})
